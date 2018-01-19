@@ -1,0 +1,15 @@
+month{
+    
+}
+table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+tr{
+  width: inherit;
+}
+table,th,td{
+    padding: 15px;
+    border: 1px solid black;
+}
