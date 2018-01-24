@@ -1,6 +1,9 @@
-<h2>year is working</h2>
- <button ng-click="getfd()">2018</button>{{fd}}
+
+ <button ng-click="getpreyear()"><</button>
+<span ng-model="year">{{year}}</span>
+
+ <button ng-click="getpostyear()">></button>
 <div id="monthContainer">
-    <div class="month" ng-repeat="x in monthArray">{{x}}<table><tr><th ng-repeat="y in dayShort track by $index">{{y}}</th></tr></table>
+    <div class="month" ng-repeat="x in monthArray">{{x}}<table><tr><th ng-repeat="y in dayShort track by $index">{{y}}</th></tr><tr ng-repeat="week in weeks"><td ng-repeat="date in week track by $index">{{date}}</td></tr></table>
     </div>
 </div>
