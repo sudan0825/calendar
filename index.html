@@ -12,7 +12,11 @@
     <body ng-app="calendar" ng-controller="mainCtrl">
 
         <div id="container" >
-            <month date="date" day="day" monthArray='monthArray'></month>
+            <h1>Calendar</h1>
+           
+            <year  day="day" month-array="monthArray" fd='fd' ng-if="yearShow"></year>
+            <month  day="day" month-array="monthArray"  ng-if="monthShow"></month>
+           
         </div>
 
 
@@ -21,6 +25,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="month.js"></script>
+    <script src="year.js"></script>
     <script src="app.js"></script>
 
 </html>
